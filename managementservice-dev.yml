@@ -11,9 +11,9 @@ server:
   port: 9001
 spring:
   application:
-    name: authservice
+    name: managementservice
   datasource:
-    url: jdbc:postgresql://host.docker.internal:5433/authdev
+    url: jdbc:postgresql://host.docker.internal:5433/managementdev
     username: postgres
     password: 12345
   jpa:
