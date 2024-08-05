@@ -11,9 +11,9 @@ server:
   port: 9003
 spring:
   application:
-    name: testservice
+    name: examservice
   datasource:
-    url: jdbc:postgresql://host.docker.internal:5435/testdev
+    url: jdbc:postgresql://host.docker.internal:5435/examdev
     username: postgres
     password: 12345
   jpa:
