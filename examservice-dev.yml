@@ -29,8 +29,8 @@ spring:
     show-sql: true
 grpc:
   server:
-    port: 9872
+    port: 7677
   client:
-    questionservice:
-      address: "static://localhost:9892"
-      negotiationType: "PLAINTEXT"
+    userService:
+      address: static://localhost:7676
+      negotiation-type: plaintext
