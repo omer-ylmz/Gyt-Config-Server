@@ -29,5 +29,5 @@ spring:
     show-sql: true
 grpc:
   server:
-    port: 9892 # Buraya gRPC sunucu portunu ekleyin
+    port: 7676
 
