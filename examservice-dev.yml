@@ -29,7 +29,7 @@ spring:
     show-sql: true
 client:
     questionservice:
-      address: "localhost:9002"
+      address: "http://localhost:9002"
       keep-alive-without-calls: true
       enable-keep-alive: true
       negotiationType: "PLAINTEXT"
