@@ -30,7 +30,7 @@ spring:
 grpc:
   client:
     questionservice:
-      address: "localhost:9090"
+      address: "localhost:8080"
       keep-alive-without-calls: true
       enable-keep-alive: true
       negotiationType: "PLAINTEXT"
