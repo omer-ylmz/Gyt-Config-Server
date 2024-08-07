@@ -27,9 +27,10 @@ spring:
           validation:
             mode: none
     show-sql: true
-client:
+grpc:
+  server:
+    port: 9872
+  client:
     questionservice:
-      address: "http://localhost:9002"
-      keep-alive-without-calls: true
-      enable-keep-alive: true
+      address: "static://localhost:9002"
       negotiationType: "PLAINTEXT"
