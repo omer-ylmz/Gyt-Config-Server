@@ -28,9 +28,10 @@ spring:
             mode: none
     show-sql: true
 grpc:
+  server:
+    port: 9894  # Buraya gRPC sunucu portunu ekleyin    
   client:
-    question-service:
-      address: "static://localhost:9090"
-      enableKeepAlive: true
-      keepAliveWithoutCalls: true
-      negotiationType: plaintext
+    questionservice:
+      keep-alive-without-calls: true
+      enable-keep-alive: true
+      negotiation-type: plaintext
