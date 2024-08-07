@@ -32,5 +32,5 @@ grpc:
     port: 9872
   client:
     questionservice:
-      address: "static://localhost:9002"
+      address: "static://localhost:9892"
       negotiationType: "PLAINTEXT"
