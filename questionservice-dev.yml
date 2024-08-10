@@ -27,11 +27,12 @@ spring:
           validation:
             mode: none
     show-sql: true
-grpc:
-  server:
-    port: 7676
   kafka:
     producer:
       bootstrap-servers: host.docker.internal:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+grpc:
+  server:
+    port: 7676
+
