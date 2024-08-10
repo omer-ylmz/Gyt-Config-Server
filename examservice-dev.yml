@@ -31,6 +31,6 @@ grpc:
   server:
     port: 7677
   client:
-    userService:
+    questionservice:
       address: static://localhost:7676
       negotiation-type: plaintext
