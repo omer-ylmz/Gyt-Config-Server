@@ -30,12 +30,12 @@ spring:
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
     topic:
       name: question_topics
-  management:
-    endpoints:
-      web:
-        exposure:
-          include: "prometheus"
-    metrics:
-      export:
-        prometheus:
-          enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
