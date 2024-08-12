@@ -1,6 +1,15 @@
 spring:
   application:
     name: discoveryserver
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "prometheus"
+    metrics:
+      export:
+        prometheus:
+          enabled: true
 eureka:
   client:
     register-with-eureka: false

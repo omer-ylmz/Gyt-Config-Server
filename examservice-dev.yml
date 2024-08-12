@@ -27,6 +27,15 @@ spring:
           validation:
             mode: none
     show-sql: true
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "prometheus"
+    metrics:
+      export:
+        prometheus:
+          enabled: true
 grpc:
   server:
     port: 7677
@@ -34,4 +43,3 @@ grpc:
     questionservice:
       address: static://localhost:7676
       negotiation-type: plaintext
-      
