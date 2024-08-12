@@ -32,15 +32,15 @@ spring:
       bootstrap-servers: host.docker.internal:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-  management:
-    endpoints:
-      web:
-        exposure:
-          include: "prometheus"
-    metrics:
-      export:
-        prometheus:
-          enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
 grpc:
   server:
     port: 7676
