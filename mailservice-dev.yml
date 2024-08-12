@@ -24,12 +24,12 @@ spring:
             trusted:
               packages: "*"
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-  management:
-    endpoints:
-      web:
-        exposure:
-          include: "prometheus"
-    metrics:
-      export:
-        prometheus:
-          enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
