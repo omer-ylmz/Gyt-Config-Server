@@ -34,3 +34,4 @@ grpc:
     questionservice:
       address: static://localhost:7676
       negotiation-type: plaintext
+      
