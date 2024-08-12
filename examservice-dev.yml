@@ -27,15 +27,15 @@ spring:
           validation:
             mode: none
     show-sql: true
-  management:
-    endpoints:
-      web:
-        exposure:
-          include: "prometheus"
-    metrics:
-      export:
-        prometheus:
-          enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
 grpc:
   server:
     port: 7677
